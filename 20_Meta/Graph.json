@@ -11,12 +11,22 @@
       "path": "P-Reinforce_Skill.md",
       "label": "P-Reinforce Blueprint",
       "type": "skill"
+    },
+    {
+      "id": "Ollama_Setup",
+      "path": "10_Wiki/🚀 Skills/Local_LLM_Environment/Ollama_Antigravity_Setup.md",
+      "label": "Ollama & Antigravity Setup",
+      "type": "skill"
     }
   ],
   "links": [
     {
       "source": "System_Validation",
       "target": "P-Reinforce_Skill"
+    },
+    {
+      "source": "Ollama_Setup",
+      "target": "System_Validation"
     }
   ]
 }
