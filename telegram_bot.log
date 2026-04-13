@@ -1,1 +1,8 @@
 ✅ Knowledge harvested: /Users/gdstudio/build/Antigravity/위키에이전트/00_Raw/2026-04-14/072911_텔레그램 연동 성공 이제 어디서든 지식을 보낼 수 있어.md
+[main e8513b0] sync: Telegram knowledge received
+ 4 files changed, 83 insertions(+)
+ create mode 100644 "00_Raw/2026-04-14/072911_\355\205\224\353\240\210\352\267\270\353\236\250 \354\227\260\353\217\231 \354\204\261\352\263\265 \354\235\264\354\240\234 \354\226\264\353\224\224\354\204\234\353\223\240 \354\247\200\354\213\235\354\235\204 \353\263\264\353\202\274 \354\210\230 \354\236\210\354\226\264.md"
+ create mode 100644 scripts/telegram_bot.py
+ create mode 100644 telegram_bot.log
+To https://github.com/cybermetabus/gd_wiki.git
+   c5f1f51..e8513b0  main -> main

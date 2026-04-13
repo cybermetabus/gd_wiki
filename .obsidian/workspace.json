@@ -178,6 +178,10 @@
   },
   "active": "903773138c12b54b",
   "lastOpenFiles": [
+    "00_Raw/2026-04-13/235244_Telegram_Note.md",
+    "00_Raw/2026-04-13",
+    "scripts/cloudflare_worker.js",
+    "00_Raw/2026-04-14/072911_텔레그램 연동 성공 이제 어디서든 지식을 보낼 수 있어.md",
     "telegram_bot.log",
     "scripts/telegram_bot.py",
     "10_Wiki/💡 Topics/AI_Knowledge_Systems/P-Reinforce_Architecture.md",
@@ -193,7 +197,6 @@
     "00_Raw/2026-04-14/065539_Test Knowledge P-Reinforce is.md",
     "00_Raw/2026-04-14/070033_첫 번째 자동화 테스트입니다 정원사님 잘 부탁드려요.md",
     "00_Raw/2026-04-14",
-    "scripts/ingest.py",
-    "scripts"
+    "scripts/ingest.py"
   ]
 }
