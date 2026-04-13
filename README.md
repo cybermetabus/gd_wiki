@@ -1,60 +1,60 @@
-# 🧠 P-Reinforce: The Autonomous Knowledge Gardener
+# 🧠 P-Reinforce: 자율형 지식 관리 정원사
 
-> **"Turning fragmented thoughts into a persistent, evolving brain through Reinforcement Learning."**
+> **"파편화된 생각을 강화학습(RL)을 통해 진화하는 고밀도 지식 체계로 변환합니다."**
 
-`P-Reinforce` is an AI-driven knowledge automation engine inspired by the LLM-Wiki architecture. It functions as an **Autonomous Gardener**—monitoring your raw inputs, classifying them with semantic precision, and interweaving them into a dense, navigable web of knowledge.
-
----
-
-## 📂 System Architecture
-
-The workspace is divided into three functional layers to maintain focus and clarity:
-
-### 1️⃣ `00_Raw/` (The Soil)
-- **Source of Truth**: All unprocessed, raw data from the user.
-- **Daily Journaling**: Organizes original notes by date (`YYYY-MM-DD`).
-
-### 2️⃣ `10_Wiki/` (The Garden)
-- **🛠️ Projects**: Goal-oriented summaries and current active workflows.
-- **💡 Topics**: Conceptual knowledge (Psychology, Coding, Philosophy, etc.).
-- **⚖️ Decisions**: Log of critical pivots and logical deductions.
-- **🚀 Skills**: Reusable patterns, prompt engineering, and refined workflows.
-
-### 3️⃣ `20_Meta/` (The Brain)
-- **`Graph.json`**: Data structure for knowledge connectivity visualization.
-- **`Policy.md`**: RL weights and classification logic based on user feedback.
-- **`Index.md`**: The master Table of Contents.
+`P-Reinforce`는 LLM-Wiki 아키텍처에서 영감을 받은 AI 기반 지식 자동화 엔진입니다. 사용자님의 **자율 정원사(Autonomous Gardener)**로서, 가공되지 않은 모든 입력을 모니터링하고, 의미론적 정밀도로 분류하며, 지식 간의 유기적인 연결망을 구축합니다.
 
 ---
 
-## 🧠 Core Engine: RL-Driven Logic
+## 📂 시스템 아키텍처
 
-P-Reinforce optimizes its actions based on the **Reward Function ($R$):**
-$$R = w_1(\text{Accuracy}) + w_2(\text{Connectivity}) + w_3(\text{Satisfaction})$$
+워크스페이스는 명확성과 효율성을 위해 세 개의 기능적 레이어로 구분됩니다:
 
-- **Autonomous Classification**: New information is automatically routed to existing folders or prompts for category creation.
-- **Bi-directional Linking**: Automatically creates `[[links]]` between related concepts to prevent "isolated" knowledge.
-- **Git Protocol**: Every reinforcement stage is committed and pushed to GitHub, ensuring an immutable timeline of your intellectual growth.
+### 1️⃣ `00_Raw/` (토양 - 원시 데이터)
+- **정보의 원천**: 가공되지 않은 모든 원본 데이터가 보관되는 곳입니다.
+- **일일 기록**: 날짜별 폴더(`YYYY-MM-DD`)를 통해 원본 메모를 체계적으로 관리합니다.
 
----
+### 2️⃣ `10_Wiki/` (정원 - 구조화된 지식)
+- **🛠️ Projects**: 목표 중심의 요약 및 현재 진행 중인 워크플로우.
+- **💡 Topics**: 개념 중심의 지식 (심리학, 코딩, 철학 등 스스로 생성한 분류).
+- **⚖️ Decisions**: 핵심 의사결정 과정과 논리적 추론 기록.
+- **🚀 Skills**: 재사용 가능한 프롬프트, 워크플로우 패턴 및 정제된 노하우.
 
-## 🚀 How to Use
-
-1. **Input**: Drop any text, markdown, or research file into `00_Raw/YYYY-MM-DD/`.
-2. **Reinforce**: The P-Reinforce agent will detect the new input, synthesize it using the **Wiki Template**, and move it to the appropriate `10_Wiki/` subfolder.
-3. **Feedback**: 
-   - Move a file to a different folder -> Agent updates the `Policy.md` weights.
-   - Praise or correction -> Agent refines its boundary definitions.
-
----
-
-## 🛠️ Tech Stack
-
-- **Engine**: Antigravity (LLM Agent)
-- **Foundation**: Markdown + Obsidian-style Linking
-- **Persistence**: Git + GitHub Sync
-- **Logic**: Reinforcement Learning (Weight-based)
+### 3️⃣ `20_Meta/` (두뇌 - 시스템 메타데이터)
+- **`Graph.json`**: 지식 간의 연결 관계를 시각화하기 위한 데이터 구조.
+- **`Policy.md`**: 사용자 피드백을 반영한 강화학습 가중치 및 분류 정책.
+- **`Index.md`**: 위키 전체의 입구 역할을 하는 마스터 목차.
 
 ---
 
-*“Knowledge is not a library, it’s a living tree. Let P-Reinforce be the roots.”*
+## 🧠 핵심 엔진: 강화학습 기반 로직
+
+P-Reinforce는 아래의 **보상 함수($R$)**를 기반으로 모든 행동을 최적화합니다:
+$$R = w_1(\text{분류 정확도}) + w_2(\text{그래프 연결성}) + w_3(\text{사용자 만족도})$$
+
+- **자율 분류**: 새로운 정보는 자동으로 기존 폴더에 배치되거나, 필요시 상위 개념을 도출하여 새 폴더를 생성합니다.
+- **양방향 링크**: 관련 개념 사이에 `[[링크]]`를 자동으로 생성하여 "고립된 지식"이 발생하는 것을 방지합니다.
+- **Git 프로토콜**: 모든 지식 강화 단계는 GitHub에 자동으로 커밋 및 푸시되어 지식의 타임라인을 보존합니다.
+
+---
+
+## 🚀 사용 방법
+
+1. **입력(Input)**: 아무 텍스트나 메모, 연구 파일을 `00_Raw/YYYY-MM-DD/` 폴더에 넣습니다.
+2. **강화(Reinforce)**: P-Reinforce 에이전트가 입력을 감지하고, **위키 템플릿**에 맞춰 내용을 정제한 후 적절한 `10_Wiki/` 하위 폴더로 이동시킵니다.
+3. **피드백(Feedback)**: 
+   - 파일을 다른 폴더로 이동시키면 에이전트가 `Policy.md`의 가중치를 업데이트합니다.
+   - 칭찬이나 수정을 통해 에이전트의 분류 경계선을 더욱 정교하게 다듬습니다.
+
+---
+
+## 🛠️ 기술 스택
+
+- **엔진**: Antigravity (LLM Agent)
+- **기반**: Markdown + Obsidian 스타일 링크
+- **저장 및 동기화**: Git + GitHub Sync
+- **로직**: 가중치 기반 강화학습 (RL)
+
+---
+
+*“지식은 도서관이 아니라 살아있는 나무와 같습니다. P-Reinforce가 그 뿌리가 되어드립니다.”*
