@@ -17,6 +17,18 @@
       "path": "10_Wiki/🚀 Skills/Local_LLM_Environment/Ollama_Antigravity_Setup.md",
       "label": "Ollama & Antigravity Setup",
       "type": "skill"
+    },
+    {
+      "id": "Sand_Cheetah_Concept",
+      "path": "10_Wiki/🚀 Skills/Creative_Prompts/Sand_Cheetah_Cinematic_Concept.md",
+      "label": "Sand Cheetah Concept",
+      "type": "skill"
+    },
+    {
+      "id": "P-Reinforce_Architecture",
+      "path": "10_Wiki/💡 Topics/AI_Knowledge_Systems/P-Reinforce_Architecture.md",
+      "label": "P-Reinforce Architecture",
+      "type": "topic"
     }
   ],
   "links": [
@@ -27,6 +39,14 @@
     {
       "source": "Ollama_Setup",
       "target": "System_Validation"
+    },
+    {
+      "source": "Sand_Cheetah_Concept",
+      "target": "P-Reinforce_Architecture"
+    },
+    {
+      "source": "P-Reinforce_Architecture",
+      "target": "P-Reinforce_Skill"
     }
   ]
 }
