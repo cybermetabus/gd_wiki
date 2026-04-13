@@ -1,0 +1,18 @@
+# P-Reinforce RL Policy
+
+This document defines the Reinforcement Learning policy and weights for knowledge classification.
+
+## Reward Function
+$$R = w_1(\text{Categorization Accuracy}) + w_2(\text{Graph Connectivity}) + w_3(\text{User Satisfaction})$$
+
+## Current Weights
+- **Categorization Accuracy ($w_1$):** 0.4
+- **Graph Connectivity ($w_2$):** 0.3
+- **User Satisfaction ($w_3$):** 0.3
+
+## Categorization Thresholds
+- **Existing Category Match:** > 85% similarity
+- **Sub-folder Refactoring:** > 12 files in a single folder
+
+## User Feedback Log
+- [2026-04-14] System initialized. Initial weights set.
