@@ -1,4 +1,22 @@
 {
-  "nodes": [],
-  "links": []
+  "nodes": [
+    {
+      "id": "System_Validation",
+      "path": "10_Wiki/🛠️ Projects/System_Initialization/01_System_Validation.md",
+      "label": "System Validation",
+      "type": "project"
+    },
+    {
+      "id": "P-Reinforce_Skill",
+      "path": "P-Reinforce_Skill.md",
+      "label": "P-Reinforce Blueprint",
+      "type": "skill"
+    }
+  ],
+  "links": [
+    {
+      "source": "System_Validation",
+      "target": "P-Reinforce_Skill"
+    }
+  ]
 }
