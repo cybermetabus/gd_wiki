@@ -1,6 +1,6 @@
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 def ingest():
     # 1. Base directory setup
@@ -8,7 +8,10 @@ def ingest():
     raw_dir = os.path.join(base_dir, "00_Raw")
     
     # 2. Get current date for folder
-    today = datetime.now().strftime("%Y-%m-%d")
+    # 2. Get current date for folder (KST/UTC+9)
+    KST = timezone(timedelta(hours=9))
+    now_kst = datetime.now(KST)
+    today = now_kst.strftime("%Y-%m-%d")
     target_dir = os.path.join(raw_dir, today)
     
     if not os.path.exists(target_dir):
@@ -33,8 +36,8 @@ def ingest():
         return
 
     # 4. Generate metadata
-    timestamp = datetime.now().strftime("%H%M%S")
-    full_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = now_kst.strftime("%H%M%S")
+    full_time = now_kst.strftime("%Y-%m-%d %H:%M:%S")
     
     # Generate title (first 30 characters or first line)
     first_line = content.split('\n')[0].strip()
