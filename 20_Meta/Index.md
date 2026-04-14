@@ -9,8 +9,9 @@ Welcome to the autonomous knowledge garden.
 - [[10_Wiki/⚖️ Decisions|⚖️ Decisions]] - Log of critical decisions and rationales.
 - [[10_Wiki/🚀 Skills/Local_LLM_Environment/Ollama_Antigravity_Setup.md|🚀 Skills: Ollama & Antigravity 연동 가이드]]
 - [[10_Wiki/🚀 Skills/Creative_Prompts/Sand_Cheetah_Cinematic_Concept.md|🚀 Skills: 사막의 질주 (시각 컨셉 가이드)]]
+- [[10_Wiki/🚀 Skills/Obsidian_Usage/Mobile_Git_Sync_Setup.md|🚀 Skills: Obsidian 모바일(Git) 연동 가이드]] 📱
 
 ## 🧠 System Health
 - **Last Reinforced:** 2026-04-14
-- **Knowledge Count:** 4
-- **Graph Density:** 0.8
+- **Knowledge Count:** 5
+- **Graph Density:** 0.82

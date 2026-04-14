@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "94ae1eb40ffa5c68",
+        "id": "46f481613218d869",
         "type": "tabs",
         "children": [
           {
-            "id": "903773138c12b54b",
+            "id": "7e2873725cf8d850",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -176,8 +176,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "903773138c12b54b",
+  "active": "a0d11bec3d935ae7",
   "lastOpenFiles": [
+    "10_Wiki/🚀 Skills/Obsidian_Usage/Mobile_Git_Sync_Setup.md",
+    "10_Wiki/🚀 Skills/Obsidian_Usage",
     "00_Raw/2026-04-13/235244_Telegram_Note.md",
     "00_Raw/2026-04-13",
     "scripts/cloudflare_worker.js",
@@ -196,7 +198,6 @@
     "10_Wiki/🛠️ Projects/System_Initialization",
     "00_Raw/2026-04-14/065539_Test Knowledge P-Reinforce is.md",
     "00_Raw/2026-04-14/070033_첫 번째 자동화 테스트입니다 정원사님 잘 부탁드려요.md",
-    "00_Raw/2026-04-14",
-    "scripts/ingest.py"
+    "00_Raw/2026-04-14"
   ]
 }

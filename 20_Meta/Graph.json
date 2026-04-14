@@ -29,6 +29,12 @@
       "path": "10_Wiki/💡 Topics/AI_Knowledge_Systems/P-Reinforce_Architecture.md",
       "label": "P-Reinforce Architecture",
       "type": "topic"
+    },
+    {
+      "id": "Obsidian_Mobile_Sync",
+      "path": "10_Wiki/🚀 Skills/Obsidian_Usage/Mobile_Git_Sync_Setup.md",
+      "label": "Obsidian Mobile Sync",
+      "type": "skill"
     }
   ],
   "links": [
@@ -46,6 +52,10 @@
     },
     {
       "source": "P-Reinforce_Architecture",
+      "target": "P-Reinforce_Skill"
+    },
+    {
+      "source": "Obsidian_Mobile_Sync",
       "target": "P-Reinforce_Skill"
     }
   ]
