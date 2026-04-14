@@ -21,9 +21,10 @@ export default {
     const msg = body.message;
     const chatId = String(msg.chat.id);
 
-    if (!env.ALLOWED_CHAT_ID || !env.BOT_TOKEN || !env.GITHUB_REPO || !env.GITHUB_PAT) {
-      return new Response('Worker environment variables are missing', { status: 500 });
-    }
+    if (!env.ALLOWED_CHAT_ID) return new Response('ERROR: ALLOWED_CHAT_ID is missing', { status: 500 });
+    if (!env.BOT_TOKEN) return new Response('ERROR: BOT_TOKEN is missing', { status: 500 });
+    if (!env.GITHUB_REPO) return new Response('ERROR: GITHUB_REPO is missing', { status: 500 });
+    if (!env.GITHUB_PAT) return new Response('ERROR: GITHUB_PAT is missing', { status: 500 });
 
     if (chatId !== String(env.ALLOWED_CHAT_ID)) {
       return new Response('Unauthorized Access', { status: 403 });
@@ -64,8 +65,9 @@ export default {
         await sendTelegramMessage(`✅ 지식 수집 완료 (KST): ${fileName.split('/').pop()}`, env.BOT_TOKEN, env.ALLOWED_CHAT_ID);
         return new Response('Success', { status: 200 });
       } else {
-        await sendTelegramMessage(`❌ GitHub 업로드 실패`, env.BOT_TOKEN, env.ALLOWED_CHAT_ID);
-        return new Response('GitHub API Error', { status: 500 });
+        const ghError = await commitToGithub(fileName, base64Content, env, true); // Get error text
+        await sendTelegramMessage(`❌ GitHub 업로드 실패: ${ghError}`, env.BOT_TOKEN, env.ALLOWED_CHAT_ID);
+        return new Response(`GitHub API Error: ${ghError}`, { status: 500 });
       }
     }
 
@@ -96,7 +98,7 @@ async function getTelegramFileBase64(fileId, botToken) {
   return btoa(binary);
 }
 
-async function commitToGithub(path, base64Content, env) {
+async function commitToGithub(path, base64Content, env, returnError = false) {
   const ghUrl = `https://api.github.com/repos/${env.GITHUB_REPO}/contents/${path}`;
 
   const response = await fetch(ghUrl, {
@@ -112,6 +114,9 @@ async function commitToGithub(path, base64Content, env) {
     })
   });
 
+  if (returnError && !response.ok) {
+    return await response.text();
+  }
   return response.ok;
 }
 

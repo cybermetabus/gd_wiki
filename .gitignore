@@ -1,0 +1,7 @@
+.DS_Store
+telegram_bot.log
+.obsidian/workspace.json
+*.vsix
+node_modules/
+dist/
+.env
